@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=0"/>
+    <title>京东-首页</title>
+    <link rel="stylesheet" href="css/base.css"/>
+    <link rel="stylesheet" href="css/index.css"/>
+</head>
+<body>
+    <!--整体布局盒子-->
+    <div class="jd_layout">
+        <!--头部搜索-->
+        <header class="jd_header">
+            <div class="jd_header_box">
+                <a class="icon_logo" href="#"></a>
+                <!--这样的固定结构？在移动端可以调用enter键 属于小键盘当中的  改成搜索按钮-->
+                <form action="#">
+                    <span class="icon_search" ></span>
+                    <input type="search" placeholder="搜索"/>
+                </form>
+                <a class="login" href="#">登录</a>
+            </div>
+        </header>
+        <!--轮播图-->
+        <div class="jd_banner">
+            <!--图片盒子-->
+            <ul class="clearfix">
+                <li><a href="#"><img src="images/l8.jpg" alt=""/></a></li>
+                <li><a href="#"><img src="images/l1.jpg" alt=""/></a></li>
+                <li><a href="#"><img src="images/l2.jpg" alt=""/></a></li>
+                <li><a href="#"><img src="images/l3.jpg" alt=""/></a></li>
+                <li><a href="#"><img src="images/l4.jpg" alt=""/></a></li>
+                <li><a href="#"><img src="images/l5.jpg" alt=""/></a></li>
+                <li><a href="#"><img src="images/l6.jpg" alt=""/></a></li>
+                <li><a href="#"><img src="images/l7.jpg" alt=""/></a></li>
+                <li><a href="#"><img src="images/l8.jpg" alt=""/></a></li>
+                <li><a href="#"><img src="images/l1.jpg" alt=""/></a></li>
+            </ul>
+            <!--点盒子-->
+            <ul>
+                <li class="now"></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+        <!--导航栏-->
+        <nav class="jd_nav">
+            <ul class="clearfix">
+                <li>
+                    <a href="#">
+                        <img src="images/nav0.png" alt=""/>
+                        <p>京东超市</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/nav1.png" alt=""/>
+                        <p>京东超市</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/nav2.png" alt=""/>
+                        <p>京东超市</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/nav3.png" alt=""/>
+                        <p>京东超市</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/nav4.png" alt=""/>
+                        <p>京东超市</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/nav5.png" alt=""/>
+                        <p>京东超市</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/nav6.png" alt=""/>
+                        <p>京东超市</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/nav7.png" alt=""/>
+                        <p>京东超市</p>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <!--商品主体-->
+        <main class="jd_product">
+            <section class="jd_product_item secKill_box">
+                <div class="product_tit no_border clearfix">
+                    <div class="f_left">
+                        <span class="sk_name">掌上秒杀</span>
+                        <div class="sk_time">
+                            <span>0</span>
+                            <span>0</span>
+                            <span>:</span>
+                            <span>0</span>
+                            <span>0</span>
+                            <span>:</span>
+                            <span>0</span>
+                            <span>0</span>
+                        </div>
+                    </div>
+                    <div class="f_right m_r10">
+                        <a href="#">更多&gt;</a><!--实体-->
+                    </div>
+                </div>
+                <div class="product_con">
+                    <ul class="sk_product clearfix">
+                        <li>
+                            <a href="#"><img src="images/detail01.jpg" alt=""/></a>
+                            <p class="now_price">&yen;10.00</p>
+                            <p class="old_price">1000.00</p>
+                        </li>
+                        <li>
+                            <a href="#"><img src="images/detail02.jpg" alt=""/></a>
+                            <p class="now_price">&yen;10.00</p>
+                            <p class="old_price">1000.00</p>
+                        </li>
+                        <li>
+                            <a href="#"><img src="images/detail01.jpg" alt=""/></a>
+                            <p class="now_price">&yen;10.00</p>
+                            <p class="old_price">1000.00</p>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section class="jd_product_item">
+                <div class="product_tit">
+                    <h3>京东超市</h3>
+                </div>
+                <div class="product_con clearfix">
+                    <a href="#" class="w_50 b_right f_left"><img src="images/cp1.jpg" alt=""/></a>
+                    <a href="#" class="w_50 b_bottom f_right"><img src="images/cp2.jpg" alt=""/></a>
+                    <a href="#" class="w_50 f_right"><img src="images/cp3.jpg" alt=""/></a>
+                </div>
+            </section>
+            <section class="jd_product_item">
+                <div class="product_tit">
+                    <h3>京东超市</h3>
+                </div>
+                <div class="product_con clearfix">
+                    <a href="#" class="w_50 b_left f_right"><img src="images/cp4.jpg" alt=""/></a>
+                    <a href="#" class="w_50 b_bottom f_left"><img src="images/cp5.jpg" alt=""/></a>
+                    <a href="#" class="w_50 f_left"><img src="images/cp6.jpg" alt=""/></a>
+                </div>
+            </section>
+            <section class="jd_product_item">
+                <div class="product_tit">
+                    <h3>京东超市</h3>
+                </div>
+                <div class="product_con clearfix">
+                    <a href="#" class="w_50 b_right f_left"><img src="images/cp1.jpg" alt=""/></a>
+                    <a href="#" class="w_50 b_bottom f_right"><img src="images/cp2.jpg" alt=""/></a>
+                    <a href="#" class="w_50 f_right"><img src="images/cp3.jpg" alt=""/></a>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="js/zepto/zepto.min.js"></script>
+    <script src="js/zepto/selector.js"></script>
+    <script src="js/zepto/fx.js"></script>
+    <script src="js/zepto/touch.js"></script>
+    <script>
+        /*zepto 实现轮播图*/
+        $(function(){
+            /*获取dom*/
+            var $banner = $('.jd_banner');
+            var $imageBox = $banner.find('ul:first-child');
+            /*扩展性选择器需要selector模块*/
+            var $pointBox = $banner.find('ul:eq(1)');
+            var $points = $pointBox.find('li');
+            var width = $banner.width();
+            /*自动轮播*/
+            var index = 1;
+            var animateFuc = function(callback){
+                $imageBox.animate({'transform':'translateX('+(-index*width)+'px)'},200,'ease',function(){
+                    /*动画结束的回调函数*/
+                    if(index>=9){
+                        index =1;
+                        /*瞬间点位*/
+                        $imageBox.css({'transform':'translateX('+(-index*width)+'px)'});
+                    }else if(index <= 0){
+                        index = 8;
+                        /*瞬间点位*/
+                        $imageBox.css({'transform':'translateX('+(-index*width)+'px)'});
+                    }
+                    /*设置原点*/
+                    $points.removeClass('now').eq(index-1).addClass('now');
+
+                    callback && callback();
+                });
+            }
+            var timer = setInterval(function(){
+                index ++ ;
+                /*动画*/
+                animateFuc();
+            },4000);
+
+            /*滑动切换*/
+            $imageBox.on('swipeLeft',function(){
+                /*下一张*/
+                index ++;
+                clearInterval(timer);
+                animateFuc(function(){
+                    clearInterval(timer);
+                    timer = setInterval(function(){
+                        index ++ ;
+                        /*动画*/
+                        animateFuc();
+                    },4000);
+                });
+            });
+            $imageBox.on('swipeRight',function(){
+                /*上一张*/
+                index --;
+                clearInterval(timer);
+                animateFuc(function(){
+                    clearInterval(timer);
+                    timer = setInterval(function(){
+                        index ++ ;
+                        /*动画*/
+                        animateFuc();
+                    },4000);
+                });
+            });
+        });
+    </script>
+</body>
+</html>

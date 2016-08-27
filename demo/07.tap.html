@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=0" />
+    <title></title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            width: 100%;
+            margin: 0 auto;
+            box-sizing: border-box;
+        }
+        a{
+            width: 200px;
+            height: 200px;
+            display: block;
+            -webkit-tap-highlight-color: transparent;
+            background: red;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <a href="javascript:;"></a>
+</div>
+<script>
+    var dom = document.querySelector('a');
+
+
+    /*我想让点击事件在移动端响应速度更快  怎么办？*/
+    /*
+    * 1，响应速度要比click要快  在150ms左右
+    * 2；不能滑动过  不能触发move事件
+    * */
+
+
+
+
+    var startTime = 0;
+    var isMove = false;
+
+    /*手指刚刚触摸到屏幕的时候触发*/
+    dom.addEventListener('touchstart',function(e){
+        console.time('respondTime');
+        startTime = Date.now();  /*时间戳*/
+    });
+
+    /*当手指在屏幕上滑动时连续触发*/
+    dom.addEventListener('touchmove',function(e){
+        isMove = true;
+    });
+
+    /*当手指在离开屏幕的时候触发*/
+    dom.addEventListener('touchend',function(e){
+        console.timeEnd('respondTime');
+        console.log(Date.now()-startTime);
+
+        /*tap*/
+        /*
+        1，响应速度要比click要快  在150ms左右
+        2；不能滑动过  不能触发move事件
+        */
+        if((Date.now()-startTime)<150 && !isMove){
+            /*这个就是tap事件  你的click需要处理的函数就可以在这里执行*/
+        }
+
+    });
+
+    /*click  在移动端会有300ms左右的延时*/
+    dom.addEventListener('click',function(e){
+
+    });
+
+
+
+</script>
+</body>
+</html>
